@@ -1,0 +1,14 @@
+*.a
+*.o
+*.so
+*.swp
+*.swo
+
+enclave
+enclave.signed
+*_args.h
+*_t.c
+*_t.h
+*_t.o
+private.pem
+public.pem
