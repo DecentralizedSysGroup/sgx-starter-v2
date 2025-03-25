@@ -1,0 +1,13 @@
+services:
+  oedev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: sim
+      args:
+        SIM: 1  # or whatever value you want to set for SIM
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
