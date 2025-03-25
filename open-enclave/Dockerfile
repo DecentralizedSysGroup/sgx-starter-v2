@@ -19,6 +19,10 @@ RUN echo 'deb [arch=amd64] https://download.01.org/intel-sgx/sgx_repo/ubuntu foc
 
 RUN apt -y install clang-11 libssl-dev gdb libsgx-enclave-common libsgx-quote-ex libprotobuf17 libsgx-dcap-ql libsgx-dcap-ql-dev az-dcap-client open-enclave
 
+FROM base as hw
+
+RUN echo "source /opt/openenclave/share/openenclave/openenclaverc" >> /etc/bash.bashrc
+
 FROM base AS sim
 
 RUN echo "source /opt/openenclave/share/openenclave/openenclaverc && export OE_SIMULATION=1" >> /etc/bash.bashrc

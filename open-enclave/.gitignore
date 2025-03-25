@@ -4,11 +4,13 @@
 *.swp
 *.swo
 
-enclave
-enclave.signed
+enclave.so
+enclave.so.signed
+*.bin
 *_args.h
 *_t.c
 *_t.h
 *_t.o
-private.pem
+*/output
 public.pem
+private.pem
