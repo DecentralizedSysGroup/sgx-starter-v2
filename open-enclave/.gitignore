@@ -11,6 +11,9 @@ enclave.so.signed
 *_t.c
 *_t.h
 *_t.o
+*_u.c
+*_u.h
+*_u.o
 */output
 public.pem
 private.pem
